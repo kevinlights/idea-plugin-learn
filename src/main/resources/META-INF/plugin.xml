@@ -1,0 +1,26 @@
+<idea-plugin>
+    <id>com.gjh.learn.idea.idea-plugin-learn</id>
+    <name>Hello World</name>
+    <vendor email="kevinlights@163.com" url="http://www.test.com">Test</vendor>
+
+    <description><![CDATA[
+    This is a hello world IDEA plugin.<br>
+    <em>for learning</em>
+    ]]></description>
+
+    <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+        <action id="com.gjh.learn.idea.action.hello" class="com.gjh.learn.idea.plugins.HelloAction" text="Hello Action"
+                description="Say Hello World">
+            <add-to-group group-id="GenerateGroup" anchor="last"/>
+        </action>
+    </actions>
+</idea-plugin>
