@@ -22,5 +22,15 @@
                 description="Say Hello World">
             <add-to-group group-id="GenerateGroup" anchor="last"/>
         </action>
+        <group id="com.gjh.learn.idea.action.mytoolgroup" text="MyToolGroup" popup="true">
+            <action id="com.gjh.learn.idea.action.subtool" class="com.gjh.learn.idea.plugins.SubToolAction"
+                    text="Sub Tool"
+                    description="Sub Menu of MyTool"/>
+            <action id="com.gjh.learn.idea.action.subtool2" class="com.gjh.learn.idea.plugins.SubToolAction"
+                    text="Sub Tool 2"
+                    description="Sub Menu 2 of MyTool"/>
+            <add-to-group group-id="ToolsMenu" anchor="last"/>
+        </group>
     </actions>
+
 </idea-plugin>
